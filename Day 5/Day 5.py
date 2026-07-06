@@ -219,81 +219,81 @@ import csv
 
 #=================================================== QUEUE ==============================================#
 
-import sys
-class Queue:
-    def __init__(self, queueSize): # parametrized constructor
-        self.queueSize = queueSize
-        self.myQueue = []
+# import sys
+# class Queue:
+#     def __init__(self, queueSize): # parametrized constructor
+#         self.queueSize = queueSize
+#         self.myQueue = []
 
-    def isFull(self):
-        if  len(self.myQueue) == self.queueSize:
-            return True  
-        else:
-            return False
+#     def isFull(self):
+#         if  len(self.myQueue) == self.queueSize:
+#             return True  
+#         else:
+#             return False
 
-    def isEmpty(self):
-        if self.myQueue == []:
-            return True
-        else:
-            return False
+#     def isEmpty(self):
+#         if self.myQueue == []:
+#             return True
+#         else:
+#             return False
         
-    def enQueue(self, value):
-        if self.isFull():
-            print("Queue is Full")
-        else:
-            self.myQueue.append(value)   
+#     def enQueue(self, value):
+#         if self.isFull():
+#             print("Queue is Full")
+#         else:
+#             self.myQueue.append(value)   
 
-    def Display(self):
-        if self.isEmpty():
-            print("Queue is empty") 
-        else:
-            print(self.myQueue)           
+#     def Display(self):
+#         if self.isEmpty():
+#             print("Queue is empty") 
+#         else:
+#             print(self.myQueue)           
 
-    def deQueue(self):
-        if self.isEmpty():
-            print("Queue is empty")
-        else:
-            self.myQueue.pop(0)            
+#     def deQueue(self):
+#         if self.isEmpty():
+#             print("Queue is empty")
+#         else:
+#             self.myQueue.pop(0)            
 
-    def forntPeek(self):
-        if self.isEmpty():
-            print("Queue is empty")
-        else:
-            print(self.myQueue[0])
+#     def forntPeek(self):
+#         if self.isEmpty():
+#             print("Queue is empty")
+#         else:
+#             print(self.myQueue[0])
 
-    def emptyQueue(self):
-        self.myQueue.clear()
+#     def emptyQueue(self):
+#         self.myQueue.clear()
 
-    def deleteQueue(self):
-        self.myQueue = None
+#     def deleteQueue(self):
+#         self.myQueue = None
 
              
-size = int(input("Enter the size of Queue :"))
-queObj = Queue(size)
-while True:
-    print("1. enQueue")
-    print("2. Display")
-    print("3. deQueue")
-    print("4. frontPeek")
-    print("5. Empty Queue")
-    print("6. deleteQueue")
-    print("7.exit")
-    choice = int(input("Enter your choice :"))
+# size = int(input("Enter the size of Queue :"))
+# queObj = Queue(size)
+# while True:
+#     print("1. enQueue")
+#     print("2. Display")
+#     print("3. deQueue")
+#     print("4. frontPeek")
+#     print("5. Empty Queue")
+#     print("6. deleteQueue")
+#     print("7.exit")
+#     choice = int(input("Enter your choice :"))
 
-    if choice == 1:
-        value = int(input("Enter value to add in Queue :"))
-        queObj.enQueue(value)
-    elif choice == 2:
-        queObj.Display()
-    elif choice == 3:
-        queObj.deQueue()   
-    elif choice == 4:
-        queObj.forntPeek()
-    elif choice == 5:
-        queObj.emptyQueue()
-    elif choice == 6:
-        queObj.deleteQueue()    
-    elif choice == 7:
-        print("Exit...")
-        sys.exit()    
+#     if choice == 1:
+#         value = int(input("Enter value to add in Queue :"))
+#         queObj.enQueue(value)
+#     elif choice == 2:
+#         queObj.Display()
+#     elif choice == 3:
+#         queObj.deQueue()   
+#     elif choice == 4:
+#         queObj.forntPeek()
+#     elif choice == 5:
+#         queObj.emptyQueue()
+#     elif choice == 6:
+#         queObj.deleteQueue()    
+#     elif choice == 7:
+#         print("Exit...")
+#         sys.exit()    
            
